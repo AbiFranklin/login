@@ -18,7 +18,7 @@ const Login = () => {
         })
             .then(function (res) {
                 if (res.data.status === true) {
-                    setToken(res.data.token)
+                    setToken(res.data.data.token)
                     window.location.assign(`${localStorage.getItem('redirect')}#state=${localStorage.getItem('state')}&access_token=${token}&token_type=Bearer`);
                 } else {
                     localStorage.setItem('message', res.data.message);
