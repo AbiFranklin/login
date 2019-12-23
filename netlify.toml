@@ -1,6 +1,6 @@
 [build]
   command = "yarn build"
-  publish="login/build"
+  publish="/build"
   base = "login"
   
   [[redirects]]
