@@ -19,7 +19,7 @@ const Login = () => {
                 if (res.data.status === true) {
                     const access_token = res.data.data.token;
                     const id = res.data.data.id;
-                    window.location.assign(`${localStorage.getItem('redirect')}#state=${localStorage.getItem('state')}&access_token=${access_token}&token_type=Bearer&id=${id}`);
+                    window.location.assign(`${localStorage.getItem('redirect')}#state=${localStorage.getItem('state')}&access_token=${access_token}&token_type=Bearer&userid=${id}`);
                 } else {
                     localStorage.setItem('message', res.data.message);
                     window.location.assign('../error')
