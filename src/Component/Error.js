@@ -5,7 +5,7 @@ const Error = () => {
         <>
             <h1>Error</h1>
             <p>{localStorage.getItem('message')}</p>
-            <button onClick={() => { window.location.assign('../') }}>
+            <button className='btn__primary' onClick={() => { window.location.assign('../') }}>
                 Go Back
             </button>
         </>);

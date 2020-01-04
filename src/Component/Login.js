@@ -36,7 +36,7 @@ const Login = () => {
             <p>We just sent an email to <b>{localStorage.getItem('email')}</b>.
             Enter your 6 digit verification code below to continue.</p>
             <input type='text' placeholder='Verification Code' onChange={onChange} /><br />
-            <button onClick={submitCode}>Continue</button>
+            <button className='btn__primary' onClick={submitCode}>Continue</button>
         </>);
 }
 

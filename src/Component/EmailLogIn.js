@@ -40,7 +40,7 @@ const EmailLogIn = () => {
             <h2>Sign In</h2>
             <p>Use the email your team admin invited you to YAC with.</p>
             <input type="text" placeholder="Enter your work email" onChange={onChange} /><br />
-            <button onClick={submitEmail}>Continue</button>
+            <button onClick={submitEmail} className='btn__primary'>Continue</button>
         </div>
     );
 }
